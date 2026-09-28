@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" role="img" aria-labelledby="title desc">
+  <title id="title">Virgin Coconut Oil</title>
+  <desc id="desc">A stylized jar of cold-pressed coconut oil with a coconut illustration.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#1d120d"/>
+      <stop offset="55%" stop-color="#4a2d1d"/>
+      <stop offset="100%" stop-color="#d3a55c"/>
+    </linearGradient>
+    <linearGradient id="jar" x1="0" x2="1">
+      <stop offset="0%" stop-color="#f6efe3"/>
+      <stop offset="100%" stop-color="#d9c9aa"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="780" fill="url(#bg)"/>
+  <circle cx="930" cy="180" r="110" fill="#f5d39c" opacity="0.18"/>
+  <g transform="translate(0 12)">
+    <ellipse cx="570" cy="590" rx="270" ry="52" fill="#000" opacity="0.22"/>
+    <g transform="translate(180 120)">
+      <path d="M360 150c0-34 27-62 62-62h120c35 0 62 28 62 62v325c0 59-48 108-108 108H468c-60 0-108-49-108-108V150z" fill="url(#jar)"/>
+      <path d="M338 182h280v18H338z" fill="#d4b37c" opacity="0.9"/>
+      <path d="M420 110c0-28 23-52 52-52h28c29 0 52 24 52 52v28h-132v-28z" fill="#f1e6d2"/>
+      <ellipse cx="500" cy="295" rx="118" ry="132" fill="#f2c77d"/>
+      <ellipse cx="500" cy="295" rx="87" ry="100" fill="#e9a84d" opacity="0.9"/>
+      <path d="M458 255c36-40 98-47 130-18 10 9 19 21 23 36 8 32-2 64-26 88-25 25-62 38-98 35-30-3-55-21-70-49-19-35-9-71 41-92z" fill="#7f421f" opacity="0.18"/>
+      <g fill="#5c321d" opacity="0.4">
+        <circle cx="466" cy="285" r="11"/>
+        <circle cx="518" cy="266" r="12"/>
+        <circle cx="555" cy="298" r="10"/>
+        <circle cx="490" cy="339" r="11"/>
+      </g>
+      <g transform="translate(220 320)">
+        <ellipse cx="82" cy="118" rx="132" ry="82" fill="#e0b061" opacity="0.8"/>
+        <path d="M18 80c28-74 121-112 192-62 47 34 64 99 40 167-11 31-30 51-58 68-38 24-94 32-138 14-49-20-82-70-74-123 3-17 15-39 38-64z" fill="#7d4e2f" opacity="0.25"/>
+      </g>
+    </g>
+  </g>
+</svg>

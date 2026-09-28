@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 780" role="img" aria-labelledby="title desc">
+  <title id="title">Fresh Young Coconut Water</title>
+  <desc id="desc">A stylized green coconut and refreshing coconut water scene.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0d2d1d"/>
+      <stop offset="55%" stop-color="#1d4d32"/>
+      <stop offset="100%" stop-color="#b7d98b"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" x2="1">
+      <stop offset="0%" stop-color="#c5f0f8"/>
+      <stop offset="100%" stop-color="#69c9d8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="780" fill="url(#bg)"/>
+  <circle cx="1030" cy="140" r="130" fill="#dff7db" opacity="0.2"/>
+  <g transform="translate(70 30)">
+    <ellipse cx="530" cy="610" rx="250" ry="44" fill="#000" opacity="0.18"/>
+    <g transform="translate(170 120)">
+      <path d="M322 120c0-42 34-76 76-76h118c42 0 76 34 76 76v266c0 76-62 138-138 138H460c-76 0-138-62-138-138V120z" fill="#6b9b2d" opacity="0.25"/>
+      <g transform="translate(210 0)">
+        <path d="M130 88c0-46 37-83 83-83 61 0 122 56 122 117 0 90-74 176-155 176S70 179 70 112c0-23 12-46 31-64 19-20 41-32 29-60z" fill="#2f7d3e"/>
+        <path d="M180 56c-18 38 0 88 29 118 23 24 48 35 81 42 14 3 42 1 53-21 18-36-4-79-50-112-55-39-88-42-113-27z" fill="#2b5b2e" opacity="0.45"/>
+        <path d="M188 150c42-44 116-51 162-12 13 11 24 24 29 40 18 57-13 118-76 143-71 29-153-3-178-76-10-30-2-63 19-95 19-27 22-29 44-0z" fill="url(#water)" opacity="0.9"/>
+        <path d="M124 155c72-19 167-17 231 36" stroke="#ddf8ff" stroke-width="10" fill="none" opacity="0.8"/>
+        <circle cx="165" cy="177" r="12" fill="#ddf8ff" opacity="0.7"/>
+        <circle cx="228" cy="206" r="10" fill="#ddf8ff" opacity="0.8"/>
+        <circle cx="290" cy="185" r="9" fill="#ddf8ff" opacity="0.7"/>
+      </g>
+      <path d="M270 185c25-49 86-78 171-82 41-2 84 5 119 21 26 12 46 28 63 50l-65 62c-31-32-88-58-136-59-45-1-82 18-112 48l-40-40z" fill="#1f6a3e" opacity="0.5"/>
+    </g>
+  </g>
+</svg>

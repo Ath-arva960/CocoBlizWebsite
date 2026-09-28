@@ -72,22 +72,8 @@ export function About() {
 
       {/* Asymmetric content grid */}
       <div className="mt-20 grid md:grid-cols-12 gap-8 md:gap-12">
-        {/* Left: image */}
-        <motion.div
-          className="md:col-span-5 md:col-start-1"
-          style={{ y }}
-        >
-          <RevealImage
-            src="https://images.pexels.com/photos/5608055/pexels-photo-5608055.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
-            alt="Coconut grove with harvested coconuts"
-            className="aspect-[4/5] w-full"
-            parallaxStrength={60}
-            delay={0.2}
-          />
-        </motion.div>
-
-        {/* Right: text + stats */}
-        <div className="md:col-span-6 md:col-start-7 flex flex-col gap-12">
+        {/* Left: text + stats */}
+        <div className="md:col-span-6 md:col-start-1 flex flex-col gap-12">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -109,7 +95,6 @@ export function About() {
             </p>
           </motion.div>
 
-          {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {stats.map((stat, i) => (
               <motion.div
@@ -129,6 +114,20 @@ export function About() {
             ))}
           </div>
         </div>
+
+        {/* Right: image */}
+        <motion.div
+          className="md:col-span-5 md:col-start-8"
+          style={{ y }}
+        >
+          <RevealImage
+            src="https://images.pexels.com/photos/5608055/pexels-photo-5608055.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            alt="Coconut grove with harvested coconuts"
+            className="aspect-[4/5] w-full"
+            parallaxStrength={60}
+            delay={0.2}
+          />
+        </motion.div>
       </div>
 
       {/* Values marquee-style list */}

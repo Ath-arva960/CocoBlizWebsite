@@ -61,12 +61,12 @@ export function Hero({ started }: HeroProps) {
 
       {/* Main content */}
       <motion.div
-        className="relative z-10 h-screen flex flex-col justify-center px-6 md:px-12"
+        className="relative z-10 h-screen flex flex-col justify-center px-6 md:px-12 pt-16 md:pt-20"
         style={{ opacity, scale }}
       >
         {/* Top label */}
         <motion.div
-          className="absolute top-32 left-6 md:left-12 flex items-center gap-3"
+          className="mb-6 flex items-center gap-3"
           initial={{ opacity: 0, x: -20 }}
           animate={started ? { opacity: 1, x: 0 } : {}}
           transition={{ delay: 0.3, duration: 0.8 }}

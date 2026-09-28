@@ -24,7 +24,7 @@ const highlights: Highlight[] = [
       'Our flagship product. Hand-picked mature coconuts, cold-pressed within six hours of harvest. The result: a silky, aromatic oil that works as beautifully in your kitchen as it does on your skin.',
     results: '12,000+ jars sold',
     image:
-      'https://images.pexels.com/photos/4294734/pexels-photo-4294734.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      'https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=1200&q=80',
     detail: 'Single-Origin · Cold-Pressed',
   },
   {
@@ -35,7 +35,7 @@ const highlights: Highlight[] = [
       'Drunk from young green coconuts within 24 hours of harvest. Naturally sweet, electrolyte-rich, and refreshingly light — the closest thing to drinking straight from the coconut.',
     results: '#1 in category',
     image:
-      'https://images.pexels.com/photos/14396286/pexels-photo-14396286.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      'https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=1200&q=80',
     detail: '24hr Fresh · No Sugar',
   },
   {
@@ -46,7 +46,7 @@ const highlights: Highlight[] = [
       'A curated box of small-batch coconut treats — toasted flakes, energy bites, and creamy yogurt-filled coconuts. The perfect guilt-free taste of the tropics, any time of day.',
     results: 'Launching now',
     image:
-      'https://images.pexels.com/photos/7676876/pexels-photo-7676876.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+      'https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1200&q=80',
     detail: 'Small-Batch · No Additives',
   },
 ];
@@ -69,8 +69,8 @@ export function ProjectShowcase() {
           <HighlightItem
             key={highlight.title}
             highlight={highlight}
-            reversed={i % 2 === 1}
             index={i}
+            reversed={false}
           />
         ))}
       </div>
@@ -80,12 +80,12 @@ export function ProjectShowcase() {
 
 function HighlightItem({
   highlight,
-  reversed,
   index,
+  reversed,
 }: {
   highlight: Highlight;
-  reversed: boolean;
   index: number;
+  reversed: boolean;
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const reduced = useReducedMotion();
@@ -104,27 +104,10 @@ function HighlightItem({
   return (
     <div
       ref={ref}
-      className={`grid md:grid-cols-2 gap-8 md:gap-16 items-center ${
-        reversed ? 'md:[direction:rtl]' : ''
-      }`}
+      className="grid md:grid-cols-[1.15fr_1fr] gap-8 md:gap-16 items-center"
     >
-      {/* Image */}
-      <motion.div
-        className="[direction:ltr]"
-        style={{ y }}
-      >
-        <RevealImage
-          src={highlight.image}
-          alt={highlight.title}
-          className="aspect-[16/10] w-full"
-          parallaxStrength={50}
-          delay={index * 0.1}
-        />
-      </motion.div>
-
-      {/* Content */}
-      <div className="[direction:ltr] flex flex-col gap-5">
-        <div className="flex items-center gap-4">
+      <div className="flex flex-col gap-5 order-1">
+        <div className="flex items-center gap-4 flex-wrap">
           <span className="font-mono text-xs text-palm-400">
             {String(index + 1).padStart(2, '0')}
           </span>
@@ -137,7 +120,7 @@ function HighlightItem({
         </div>
 
         <motion.h3
-          className="font-display text-5xl md:text-7xl font-bold tracking-ultra-tight text-cream-50"
+          className="font-display text-5xl md:text-[5.2rem] leading-[0.9] font-bold tracking-[-0.06em] text-cream-50"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-10%' }}
@@ -150,11 +133,11 @@ function HighlightItem({
           {highlight.category}
         </p>
 
-        <p className="text-base md:text-lg text-cream-200 leading-relaxed max-w-lg">
+        <p className="text-base md:text-lg text-cream-200 leading-relaxed max-w-xl">
           {highlight.story}
         </p>
 
-        <div className="flex items-center gap-6 mt-4">
+        <div className="flex items-center gap-6 mt-2 flex-wrap">
           <div className="flex flex-col">
             <span className="font-mono text-[10px] uppercase tracking-wider text-ink-400">
               Popularity
@@ -173,6 +156,17 @@ function HighlightItem({
           </MagneticButton>
         </div>
       </div>
+
+      <motion.div className="order-2" style={{ y }}>
+        <RevealImage
+          src={highlight.image}
+          alt={highlight.title}
+          className="aspect-[16/10] w-full rounded-[1.25rem] border border-white/10 bg-ink-900"
+          imgClassName="rounded-[1.25rem]"
+          parallaxStrength={50}
+          delay={index * 0.1}
+        />
+      </motion.div>
     </div>
   );
 }
