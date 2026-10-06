@@ -122,6 +122,8 @@ function GalleryCard({ item, index }: { item: GalleryItem; index: number }) {
         src={item.image}
         alt={item.title}
         loading="lazy"
+        width={940}
+        height={650}
         className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-expo group-hover:scale-110"
       />
 

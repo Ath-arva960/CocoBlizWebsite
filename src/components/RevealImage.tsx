@@ -37,6 +37,9 @@ interface RevealImageProps {
   parallax?: boolean;
   parallaxStrength?: number;
   rounded?: boolean;
+  width?: number;
+  height?: number;
+  loading?: 'eager' | 'lazy';
 }
 
 export function RevealImage({
@@ -49,6 +52,9 @@ export function RevealImage({
   parallax = true,
   parallaxStrength = 80,
   rounded = false,
+  width = 1200,
+  height = 780,
+  loading = 'lazy',
 }: RevealImageProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const reduced = useReducedMotion();
@@ -92,7 +98,9 @@ export function RevealImage({
       <motion.img
         src={imageSrc}
         alt={alt}
-        loading="lazy"
+        loading={loading}
+        width={width}
+        height={height}
         onError={() => {
           if (imageSrc !== FALLBACK_IMAGE) {
             setImageSrc(FALLBACK_IMAGE);

@@ -76,7 +76,7 @@ export function Loader({ onComplete }: LoaderProps) {
               transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
             >
               <h1 className="font-display text-5xl md:text-7xl font-bold tracking-ultra-tight text-cream-50">
-                CocBliz
+                Cocoblitz
               </h1>
             </motion.div>
 

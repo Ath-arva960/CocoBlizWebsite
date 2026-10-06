@@ -164,7 +164,7 @@ export function VideoShowcase() {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        Every CocBliz product begins in a tropical grove. Watch the journey from
+        Every Cocoblitz product begins in a tropical grove. Watch the journey from
         palm to package — and taste the difference that purity makes.
       </motion.p>
     </section>

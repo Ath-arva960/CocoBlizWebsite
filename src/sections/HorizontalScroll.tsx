@@ -15,7 +15,7 @@ interface Product {
 const products: Product[] = [
   {
     id: 1,
-    title: 'CocBliz Oil',
+    title: 'Cocoblitz Oil',
     category: 'Cold-Pressed Coconut Oil',
     tag: 'Bestseller',
     description:
@@ -26,7 +26,7 @@ const products: Product[] = [
   },
   {
     id: 2,
-    title: 'CocBliz Water',
+    title: 'Cocoblitz Water',
     category: 'Fresh Coconut Water',
     tag: 'Hydration',
     description:
@@ -37,7 +37,7 @@ const products: Product[] = [
   },
   {
     id: 3,
-    title: 'CocBliz Milk',
+    title: 'Cocoblitz Milk',
     category: 'Creamy Coconut Milk',
     tag: 'Kitchen',
     description:
@@ -48,7 +48,7 @@ const products: Product[] = [
   },
   {
     id: 4,
-    title: 'CocBliz Treats',
+    title: 'Cocoblitz Treats',
     category: 'Artisanal Coconut Snacks',
     tag: 'New',
     description:

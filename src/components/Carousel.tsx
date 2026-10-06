@@ -1,5 +1,5 @@
 import { useState, useRef, useCallback, useEffect, type ReactNode } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface CarouselProps {

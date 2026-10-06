@@ -34,7 +34,9 @@ export function Navbar({ onNavigate }: NavbarProps) {
 
   return (
     <>
+      <header>
       <motion.nav
+        aria-label="Primary navigation"
         className={`fixed top-0 left-0 right-0 z-[100] px-6 md:px-12 py-5 transition-all duration-500 ease-expo ${
           scrolled
             ? 'backdrop-blur-md bg-ink-950/70 border-b border-ink-700/50'
@@ -53,7 +55,7 @@ export function Navbar({ onNavigate }: NavbarProps) {
             data-cursor-label="TOP"
           >
             <span className="font-display text-xl font-bold tracking-ultra-tight text-cream-50">
-              CocBliz
+              Cocoblitz
             </span>
             <span className="w-1.5 h-1.5 rounded-full bg-palm-400 group-hover:scale-150 transition-transform duration-300" />
           </button>
@@ -97,6 +99,7 @@ export function Navbar({ onNavigate }: NavbarProps) {
           </button>
         </div>
       </motion.nav>
+      </header>
 
       {/* Mobile menu */}
       <AnimatePresence>

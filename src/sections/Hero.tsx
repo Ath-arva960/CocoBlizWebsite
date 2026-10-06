@@ -138,6 +138,10 @@ export function Hero({ started }: HeroProps) {
             src="https://images.pexels.com/photos/5008822/pexels-photo-5008822.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
             alt="Coconut palm tree with ripe fruits against blue sky"
             className="w-full h-full object-cover"
+            loading="eager"
+            fetchPriority="high"
+            width={940}
+            height={650}
           />
           <div className="absolute inset-0 bg-gradient-to-t from-ink-950/40 to-transparent" />
         </motion.div>

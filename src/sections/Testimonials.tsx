@@ -16,7 +16,7 @@ const testimonials: Testimonial[] = [
     name: 'Sarah Chen',
     role: 'Wellness Blogger',
     rating: 5,
-    text: "CocBliz oil is the only one I use now. The aroma is incredible — you can tell it's truly cold-pressed. My skin has never looked better.",
+    text: "Cocoblitz oil is the only one I use now. The aroma is incredible — you can tell it's truly cold-pressed. My skin has never looked better.",
     avatar:
       'https://images.pexels.com/photos/4839757/pexels-photo-4839757.jpeg?auto=compress&cs=tinysrgb&h=200&w=200&fit=crop',
   },
@@ -24,7 +24,7 @@ const testimonials: Testimonial[] = [
     name: 'Marcus Reid',
     role: 'Chef & Restaurant Owner',
     rating: 5,
-    text: "I cook with CocBliz every day. The flavor is clean and pure — it elevates every dish. My customers can taste the difference.",
+    text: "I cook with Cocoblitz every day. The flavor is clean and pure — it elevates every dish. My customers can taste the difference.",
     avatar:
       'https://images.pexels.com/photos/7676720/pexels-photo-7676720.jpeg?auto=compress&cs=tinysrgb&h=200&w=200&fit=crop',
   },
@@ -40,7 +40,7 @@ const testimonials: Testimonial[] = [
     name: 'David Park',
     role: 'Sustainable Retailer',
     rating: 5,
-    text: "We stock CocBliz in all three of our stores. The packaging is eco-friendly, the story is authentic, and customers keep coming back for more.",
+    text: "We stock Cocoblitz in all three of our stores. The packaging is eco-friendly, the story is authentic, and customers keep coming back for more.",
     avatar:
       'https://images.pexels.com/photos/14924909/pexels-photo-14924909.jpeg?auto=compress&cs=tinysrgb&h=200&w=200&fit=crop',
   },
@@ -48,7 +48,7 @@ const testimonials: Testimonial[] = [
     name: 'Luna Martinez',
     role: 'Beauty Influencer',
     rating: 5,
-    text: "I've tried every coconut oil on the market. CocBliz is in a league of its own — silky, fragrant, and genuinely effective for hair and skin.",
+    text: "I've tried every coconut oil on the market. Cocoblitz is in a league of its own — silky, fragrant, and genuinely effective for hair and skin.",
     avatar:
       'https://images.pexels.com/photos/2205647/pexels-photo-2205647.jpeg?auto=compress&cs=tinysrgb&h=200&w=200&fit=crop',
   },

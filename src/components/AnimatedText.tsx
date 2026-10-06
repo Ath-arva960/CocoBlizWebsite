@@ -35,6 +35,20 @@ export const AnimatedText = forwardRef<HTMLDivElement, AnimatedTextProps>(
     const elementRef = (ref as React.RefObject<HTMLDivElement>) || localRef;
     const isInView = useInView(elementRef, { once, margin: '-10%' });
     const reduced = useReducedMotion();
+    const MotionTag =
+      Tag === 'h1'
+        ? motion.h1
+        : Tag === 'h2'
+          ? motion.h2
+          : Tag === 'h3'
+            ? motion.h3
+            : Tag === 'h4'
+              ? motion.h4
+              : Tag === 'p'
+                ? motion.p
+                : Tag === 'span'
+                  ? motion.span
+                  : motion.div;
 
     const units =
       animation === 'char' ? text.split('') : text.split(' ');
@@ -62,7 +76,7 @@ export const AnimatedText = forwardRef<HTMLDivElement, AnimatedTextProps>(
     };
 
     return (
-      <motion.div
+      <MotionTag
         ref={elementRef}
         variants={containerVariants}
         initial="hidden"
@@ -101,7 +115,7 @@ export const AnimatedText = forwardRef<HTMLDivElement, AnimatedTextProps>(
             </span>
           ))
         )}
-      </motion.div>
+      </MotionTag>
     );
   }
 );

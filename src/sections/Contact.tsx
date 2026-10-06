@@ -5,10 +5,10 @@ import { ArrowUpRight, Mail, MapPin } from 'lucide-react';
 import { useReducedMotion } from '@/hooks/useReducedMotion';
 
 const contactLinks = [
-  { label: 'Email', value: 'hello@cocbliz.com', href: 'mailto:hello@cocbliz.com' },
-  { label: 'Instagram', value: '@cocbliz', href: '#' },
-  { label: 'Facebook', value: '/cocbliz', href: '#' },
-  { label: 'Wholesale', value: 'partners@cocbliz.com', href: 'mailto:partners@cocbliz.com' },
+  { label: 'Email', value: 'hello@cocoblitz.com', href: 'mailto:hello@cocoblitz.com' },
+  { label: 'Instagram', value: '@cocoblitz', href: '#' },
+  { label: 'Facebook', value: '/cocoblitz', href: '#' },
+  { label: 'Wholesale', value: 'partners@cocoblitz.com', href: 'mailto:partners@cocoblitz.com' },
 ];
 
 export function Contact() {
@@ -102,12 +102,12 @@ export function Contact() {
             <div className="flex items-center gap-3 text-cream-200">
               <Mail size={16} className="text-palm-400" />
               <a
-                href="mailto:hello@cocbliz.com"
+                href="mailto:hello@cocoblitz.com"
                 className="font-mono text-xs uppercase tracking-wider hover:text-cream-50 transition-colors"
                 data-cursor="open"
                 data-cursor-label="EMAIL"
               >
-                hello@cocbliz.com
+                hello@cocoblitz.com
               </a>
             </div>
 
@@ -142,11 +142,11 @@ export function Contact() {
           {/* Right: CTA */}
           <div className="flex flex-col items-start md:items-end gap-6">
             <p className="text-base text-cream-200 max-w-sm md:text-right">
-              Want to stock CocBliz in your store, or just say hello? We partner
+              Want to stock Cocoblitz in your store, or just say hello? We partner
               with select retailers and love hearing from coconut enthusiasts.
             </p>
             <MagneticButton
-              href="mailto:hello@cocbliz.com"
+              href="mailto:hello@cocoblitz.com"
               className="group relative px-10 py-6 bg-palm-400 text-ink-950 font-display text-lg font-bold tracking-tight rounded-sm overflow-hidden"
               strength={0.25}
             >

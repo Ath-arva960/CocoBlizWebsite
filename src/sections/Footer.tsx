@@ -52,7 +52,7 @@ export function Footer() {
               data-cursor-label="TOP"
             >
               <span className="font-display text-3xl font-bold tracking-ultra-tight text-cream-50">
-                CocBliz
+                Cocoblitz
               </span>
               <span className="w-2 h-2 rounded-full bg-palm-400 group-hover:scale-150 transition-transform duration-300" />
             </button>
@@ -64,7 +64,7 @@ export function Footer() {
           </div>
 
           {/* Navigation */}
-          <div>
+          <nav aria-label="Footer navigation">
             <h4 className="font-mono text-[10px] uppercase tracking-wider text-ink-400 mb-4">
               Explore
             </h4>
@@ -84,7 +84,7 @@ export function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
+          </nav>
 
           {/* Social */}
           <div>
@@ -119,7 +119,7 @@ export function Footer() {
           transition={{ duration: 0.6 }}
         >
           <span className="font-mono text-[10px] uppercase tracking-wider text-ink-400">
-            © 2026 CocBliz — Pure Coconut. Tropical Goodness.
+            © 2026 Cocoblitz — Pure Coconut. Tropical Goodness.
           </span>
           <div className="flex items-center gap-6">
             <span className="font-mono text-[10px] uppercase tracking-wider text-ink-400">

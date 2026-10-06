@@ -53,7 +53,7 @@ const highlights: Highlight[] = [
 
 export function ProjectShowcase() {
   return (
-    <section className="relative bg-ink-950 py-24 md:py-40 px-6 md:px-12">
+    <section id="work" className="relative bg-ink-950 py-24 md:py-40 px-6 md:px-12" aria-labelledby="featured-highlights-heading">
       {/* Section label */}
       <div className="flex items-center gap-4 mb-16">
         <span className="font-mono text-xs uppercase tracking-ultra-wide text-palm-400">
@@ -64,13 +64,16 @@ export function ProjectShowcase() {
         </span>
       </div>
 
+      <h2 id="featured-highlights-heading" className="sr-only">
+        Featured highlights from Cocoblitz
+      </h2>
+
       <div className="space-y-24 md:space-y-40">
         {highlights.map((highlight, i) => (
-          <HighlightItem
+                  <HighlightItem
             key={highlight.title}
             highlight={highlight}
             index={i}
-            reversed={false}
           />
         ))}
       </div>
@@ -81,11 +84,9 @@ export function ProjectShowcase() {
 function HighlightItem({
   highlight,
   index,
-  reversed,
 }: {
   highlight: Highlight;
   index: number;
-  reversed: boolean;
 }) {
   const ref = useRef<HTMLDivElement>(null);
   const reduced = useReducedMotion();

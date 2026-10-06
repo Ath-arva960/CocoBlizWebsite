@@ -5,12 +5,9 @@ export function useScrollVelocity() {
   const velocityRef = useRef(0);
 
   useEffect(() => {
-    let lenisInstance: Lenis | null = null;
-
     const checkLenis = () => {
       const lenis = (window as unknown as { __lenis?: Lenis }).__lenis;
       if (lenis) {
-        lenisInstance = lenis;
         lenis.on('scroll', (e: { velocity: number }) => {
           velocityRef.current = Math.abs(e.velocity || 0);
         });

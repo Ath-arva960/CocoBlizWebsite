@@ -81,7 +81,7 @@ export function About() {
             transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
           >
             <p className="text-lg md:text-xl text-cream-100 leading-relaxed">
-              CocBliz was born from a simple belief: that the humble coconut —
+              Cocoblitz was born from a simple belief: that the humble coconut —
               nature's most versatile gift — deserves to be treated with
               reverence, not shortcuts. We work directly with small-scale coconut
               farmers across tropical groves, paying fair prices and harvesting
